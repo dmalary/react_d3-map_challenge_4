@@ -1,6 +1,41 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hexagon US map, showing the number of major 4 sports league teams by State. The major 4 are NFL, NHL, MLB, NBA.
+
+<!-- App link: [Draft dashboard](https://dmalary.github.io/nfl_draft-dashboard/) -->
+
+### commands
+- install: npm i
+- run: npm run dev
+<!-- - build: npm run build
+- deploy: npm run deploy -->
+
+
+### Refs
+- react + d3
+  - https://www.sitepoint.com/d3-js-react-interactive-data-visualizations/#creatingbasicdatavisualizations
+  - https://2019.wattenberger.com/blog/react-and-d3
+- map
+  - https://www.react-graph-gallery.com/hexbin-map
+  - https://d3-graph-gallery.com/graph/hexbinmap_geo_label.html
+  - https://www.react-graph-gallery.com/2d-density-plot
+- deploy:
+  - https://blog.logrocket.com/deploying-react-apps-github-pages/
+  - https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf
+- data:
+  - https://en.wikipedia.org/wiki/List_of_U.S._and_Canadian_cities_by_number_of_major_professional_sports_teams#Teams_by_state/province/district
+
+
+### conventions
+- [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+- [Types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+
+
+### AI assistants
+- [chatGPT](https://chat.openai.com/)
+
+
+<!-- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
@@ -47,4 +82,4 @@ export default tseslint.config({
     ...react.configs['jsx-runtime'].rules,
   },
 })
-```
+``` -->

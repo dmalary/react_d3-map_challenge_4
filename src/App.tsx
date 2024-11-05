@@ -1,33 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+import { numData } from '../data/numData'
+import { geoData } from '../data/geoData'
+
+import HexbinCholorpleth from '../components/HexbinCholorpleth'
+
 function App() {
-  const [count, setCount] = useState(0)
+
+  const specs = { width: 900, height: 450 }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className='copy'>
+        <h1>What state has the most sports teams?</h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          The following hexbin map shows the number of US sports teams, by state, among the 4 major leagues (NFL, NHL, MLB, NBA).
         </p>
+        <p>Data from <a href="https://en.wikipedia.org/wiki/List_of_U.S._and_Canadian_cities_by_number_of_major_professional_sports_teams#Teams_by_state/province/district">Wikipedia</a>.</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='legend'>
+        <div className='has-sports'>Has sports teams</div>
+        <div className='no-sports'>No sports teams</div>
+      </div>
+      <HexbinCholorpleth width={specs.width} height={specs.height} geoData={geoData} numData={numData}  />
     </>
   )
 }

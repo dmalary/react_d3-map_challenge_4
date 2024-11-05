@@ -38,7 +38,7 @@ const HexbinCholorpleth = ({ width, height, geoData, numData }: MapProps) => {
         <>
           <path
             key={shape.id}
-            d={geoPathGenerator(shape)}
+            d={geoPathGenerator(shape) ? geoPathGenerator(shape)! : undefined}
             stroke="#333333"
             strokeWidth={0.5}
             // fill={color}
@@ -62,7 +62,7 @@ const HexbinCholorpleth = ({ width, height, geoData, numData }: MapProps) => {
         <>
           <path
             key={shape.id}
-            d={geoPathGenerator(shape)}
+            d={geoPathGenerator(shape) ? geoPathGenerator(shape)! : undefined}
             stroke="#e6cc84"
             strokeWidth={0.5}
             // fill={'none'}

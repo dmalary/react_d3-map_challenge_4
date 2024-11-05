@@ -2,7 +2,7 @@
 
 Hexagon US map, showing the number of major 4 sports league teams by State. The major 4 are NFL, NHL, MLB, NBA.
 
-<!-- App link: [Draft dashboard](https://dmalary.github.io/nfl_draft-dashboard/) -->
+[App link](https://dmalary.github.io/react_d3-map_challenge_4/)
 
 ### commands
 - install: npm i

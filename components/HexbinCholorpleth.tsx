@@ -33,7 +33,7 @@ const HexbinCholorpleth = ({ width, height, geoData, numData }: MapProps) => {
 
     const centroid = geoPathGenerator.centroid(shape);
 
-    return (regionData?.value > 0) ? 
+    return (regionData?.value !== undefined && regionData.value > 0) ? 
        (
         <>
           <path

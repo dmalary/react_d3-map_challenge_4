@@ -7,8 +7,8 @@ Hexagon US map, showing the number of major 4 sports league teams by State. The 
 ### commands
 - install: npm i
 - run: npm run dev
-<!-- - build: npm run build
-- deploy: npm run deploy -->
+- build: npm run build
+- deploy: npm run deploy
 
 
 ### Refs

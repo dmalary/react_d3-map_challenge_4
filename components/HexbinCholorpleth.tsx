@@ -2,9 +2,14 @@ import * as d3 from 'd3';
 import { FeatureCollection, Geometry } from 'geojson';
 
 // List of additional properties that are specific to my geoJson file
-type FeatureProps = {
-  google_name: string;
+export type FeatureProps = {
+  cartodb_id: number;
+  created_at: string;
+  updated_at: string;
+  label: string;
+  bees: number | null;
   iso3166_2: string;
+  google_name: string;
 };
 
 type MapProps = {

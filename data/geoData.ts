@@ -1,4 +1,7 @@
-export const geoData = {
+import { FeatureCollection, Geometry } from "geojson";
+import { FeatureProps } from "../components/HexbinCholorpleth";
+
+export const geoData: FeatureCollection<Geometry, FeatureProps> = {
   type: 'FeatureCollection',
   features: [
     {

@@ -54,3 +54,23 @@ body {
 .copy h1 {
   margin: 0.5rem auto 1.5rem;
 }
+
+.legend {
+  color: #000000;
+  padding: 0 4rem .5rem;
+  /* text-align: right; */
+}
+
+.legend div {
+  width: 10rem;
+  padding: 2px 3px;
+  margin: 5px 0;
+}
+
+.has-sports {
+  background: #e7cc84;
+}
+
+.no-sports {
+  background: #e5e5e5;
+}
